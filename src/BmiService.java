@@ -1,12 +1,11 @@
-public class BmiService {
-public static double calucate(double index) {
-    private static double power(int weight, int i) {
+public class BmiService{
 
-    int weight = 57;
-    int height = 163;
+    public double calculate (double index) {
+            int weight = 57;
+            int height = 163;
+            double index = (height * height) / weight;
 
-    double index = power(weight, 2) / height;
+            return index;
+        }
+
     }
-   return (index);
-    }
-}
