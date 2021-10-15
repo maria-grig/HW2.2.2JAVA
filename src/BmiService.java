@@ -1,11 +1,12 @@
 public class BmiService{
 
-    public double calculate (double index) {
-            int weight = 57;
-            int height = 163;
-            double index = (height * height) / weight;
+    public double calculate (int height, int weight) {
+
+            double convertedHeight = Math.round(height*1.0)/100.0;
+            double index = weight / (convertedHeight * convertedHeight);
 
             return index;
+
         }
 
     }
